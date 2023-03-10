@@ -1,0 +1,339 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+
+  * {
+    padding: 0;
+    margin: 0;
+  }
+   
+   body {
+    background: #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+
+   h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   p {
+    font-size: 18px;
+    padding: 10px;
+   }
+
+   a {
+    color: black;
+   }
+
+   #myLinks {
+    text-align: center;
+   }
+
+   .mobile-container {
+    max-width: 480px;
+    margin: auto;
+    background-color: #555;
+    height: 500px;
+    color: white;
+    border-radius: 10px;
+    }
+
+    .navbar {
+    background-color: whitesmoke;
+    overflow:hidden;
+    position: relative;
+    padding: 0px;
+    }
+
+    .navbar-container {
+        padding: 10px;
+        background-color: whitesmoke;
+    }
+
+    .icon {
+        padding: 0px;
+    }
+
+    .navbar #myLinks {
+    display: none;
+    background-color: white;
+    border-width:1px;
+    }
+
+    div#myLinks :hover {
+    background-color: #ccc;
+    }
+
+    .navbar a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 22px;
+    display: block;
+    background-color: whitesmoke;
+    }
+
+    .navbar a.icon {
+    background: whitesmoke;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    }
+
+    .active {
+    background-color: white;
+    color: white;
+    }
+
+    #Portfolio {
+        text-align: center;
+    }
+    .top-sig {
+        width: 500px; 
+        height: 150px;
+        display: inline-block;
+    }
+
+    .intro {
+        text-align: center;
+        margin: 20px 0px 20px 0px;
+    }
+
+    .projects {
+        padding: 10px;
+    }
+
+    .certs {
+        display: flex;
+        padding: 10px;
+        align-items: flex-start;
+    }
+
+    .btns {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .btns2 {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .project-btns {
+        display: grid;
+        /*grid-template-columns: 1fr 1fr;*/
+        gap: 10px;
+    }
+
+    input {
+        margin: 10px;
+    }
+
+    .btn-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 50px;
+    }
+    
+    input[type=button] {
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        padding: 12px 12px;
+        font-size: 15px;
+        font-weight: lighter;
+        border-width: 1px;
+        border-radius: 3px;
+        }
+    
+        input[type=button]:hover {
+        background: grey;
+        box-shadow: 0px 0px 1px #777;
+        cursor: pointer;
+        }
+    
+    .exp {
+        text-align: center;
+        margin: 50px 0px 50px 0px;
+    }
+
+   .select {
+        position: relative;
+        min-width: 200px;
+        border-radius: 5px;
+        border-width: 1px;
+        cursor:pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 0px 50px 0px;
+    }
+    
+    #txtbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 0px 0px 0px;
+    }
+
+    .submit-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0px 50px 0px;
+    }
+
+    .select svg {
+        position: absolute;
+        right: 200px;
+        top: 13px;
+        width: 10px;
+        height: 6px;
+        stroke-width: 2px;
+        stroke: fill;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        pointer-events: none;
+    }
+        
+    .select select {
+        padding: 7px 40px 7px 12px;
+        width: 60%;
+        border-width: 1px;
+        border-radius: 5px;
+        box-shadow: 0 1px 3px -2px #9098a9;
+        cursor: pointer;
+        font-family: inherit;
+        font-size: 16px;
+        transition: all 150ms ease;
+    }
+        
+    .select select:hover {
+        cursor: pointer;
+        stroke: grey;
+    }
+        
+    .select select:required:invalid {
+        color: #5a667f;
+    }
+        
+    .select select option {
+        stroke: grey;
+        cursor:pointer;
+    }
+
+    .select select option[value=""][disabled] {
+        display: none;
+    }
+
+    .select select:focus {
+        outline: none;
+        border-color: grey;
+        cursor:pointer;
+        box-shadow: 0 0 0 2px rgba(0,119,255,0.2);
+    }
+    
+    .select select:hover + svg {
+        stroke: grey;
+        cursor: pointer;
+    }
+
+    .sprites {
+        position: absolute;
+        width: 0;
+        height: 0;
+        pointer-events: none;
+        user-select: none;
+    }
+
+    button[type=submit] {
+        background-color: white;
+        color: black;
+        cursor: pointer;
+        padding: 10px 14px;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 5px;
+        border-width: 1px;
+    }
+
+    button[type=submit]:hover {
+        background: grey;
+        box-shadow: 0px 0px 1px #777;
+        cursor: pointer;
+    }
+
+    #Certs {
+        margin: 40px 0px 0px 0px;
+    }
+    
+    .hiring {
+        padding: 25px;
+        text-align: center;
+    }
+
+    .hiring a {
+        font-size: 18px;
+        font-weight: none;
+        margin: 0px;
+        display: inline;
+        padding: 0px;
+        text-decoration: underline;
+    }
+    
+    .hiring address {
+        margin: 20px 0px 30px 0px;
+    }
+
+    #About {
+        padding: 20px;
+    }
+
+    .abt {
+        background-color: white;
+        padding: 0px 50px 50px 50px;
+        text-align: center;
+        margin: 0px 50px 0px 50px;
+    }
+
+    .abt a {
+        font-size: 18px;
+        font-weight: bold;
+        display: inline;
+        text-decoration: underline;
+    }
+
+    .closer {
+        text-align: center;
+    }
+
+    .bot-sig {
+        width: 500px; 
+        height: 150px;
+        display: inline-block;
+    }
+
+    .social-icons {
+        display: grid;
+        font-size: 2rem;
+        grid-template-columns: repeat(5, 1fr);
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 30px 0px 30px 0px;
+        background: whitesmoke;
+      }
+
+      .social-icons a {
+        color: black;
+      }
